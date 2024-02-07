@@ -17,17 +17,66 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  background: rgb(1, 82, 78);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    rgba(1, 82, 78, 1) 0%,
+    rgba(1, 82, 78, 1) 100%,
+    rgba(0, 255, 25, 1) 100%
+  );
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.hindi {
+  background-image: url("/01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+.ballot {
+  background-image: url("/02.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+.chicken {
+  background-image: url("/03.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+.fish {
+  background-image: url("/04.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+.crab {
+  background-image: url("/05.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+.shrimp {
+  background-image: url("/06.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
 }
