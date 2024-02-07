@@ -1,15 +1,17 @@
 import React from "react";
 import { Chip } from "..";
+import { PlayerChip } from "@/app/type";
 
 type Props = {
-  chips: (number | string)[];
+  playerChips: PlayerChip[];
 };
 
-export function Pool({ chips }: Props) {
+export function Pool({ playerChips }: Props) {
+
   return (
     <div style={{ position: "relative" }}>
-      {chips.map((chip, index) => (
-        <Chip price={chip} key={index} zIndex={index + 1} />
+      {playerChips.map((playerChip, index) => (
+        <Chip price={playerChip.chip.price} key={index} zIndex={index + 1} />
       ))}
     </div>
   );
