@@ -39,6 +39,8 @@ body {
   background-repeat: no-repeat;
   margin: 0; /* If you want no margin */
   padding: 0; /*if your want to padding */
+  position: relative;
+  z-index: 0;
 }
 .ballot {
   background-image: url("/02.png");
@@ -79,4 +81,13 @@ body {
   background-repeat: no-repeat;
   margin: 0; /* If you want no margin */
   padding: 0; /*if your want to padding */
+}
+
+.chip {
+  background-image: url("/chip.svg");
+  background-size: cover;
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+  height: 40px;
+  width: 40px;
 }
