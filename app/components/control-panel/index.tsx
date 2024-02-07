@@ -35,10 +35,11 @@ const chipTypes: ChipType[] = [
 export function ControlPanel({}: Props) {
   const chip = useStore((state) => state.chip);
   const setChip = useStore((state) => state.setChip);
+  const allClear = useStore((state) => state.allClear);
 
   console.log(chip);
   return (
-    <div>
+    <div className="flex flex -">
       <div className="flex gap-2">
         {chipTypes.map((chipType) => (
           <motion.div
@@ -57,6 +58,12 @@ export function ControlPanel({}: Props) {
           </motion.div>
         ))}
       </div>
+      <button
+        onClick={allClear}
+        className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-500 text-white hover:bg-yellow-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+      >
+        Bỏ Cược
+      </button>
     </div>
   );
 }

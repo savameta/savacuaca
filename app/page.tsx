@@ -11,7 +11,6 @@ export default function Home() {
   const crabPool = useStore((state) => state.CRAB);
   const shrimpPool = useStore((state) => state.SHRIMP);
   const chip = useStore((state) => state.chip);
-  const allClear = useStore((state) => state.allClear);
 
   const pushPool = useStore((state) => state.pushPool);
 
@@ -59,12 +58,7 @@ export default function Home() {
         </div>
         <div>
           <ControlPanel />
-          <button
-            onClick={allClear}
-            className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-500 text-white hover:bg-yellow-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-          >
-            Bỏ Cược
-          </button>
+         
         </div>
       </div>
       <div>2</div>
